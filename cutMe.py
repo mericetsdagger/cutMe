@@ -66,6 +66,9 @@ class Application(Frame):
             intt = tekst.find(Application.tekst_od) + int(self.entryDo.get())
             fragment_tekstu = tekst[tekst.find(Application.tekst_od):intt]
             print(fragment_tekstu)
+
+        with open("nowy_plik.txt","w") as plik2:
+            plik2.write(fragment_tekstu)   
             
                 
         
